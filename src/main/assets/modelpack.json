@@ -1,0 +1,26 @@
+{
+  "schemaVersion": 1,
+  "id": "waifu2x",
+  "name": "waifu2x 基础模型",
+  "models": [
+    {
+      "key": "waifu2x",
+      "name": "Waifu2x",
+      "engine": "waifu2x",
+      "assetPath": "waifu2x-models",
+      "scales": [2],
+      "denoiseLevels": [0, 1, 2, 3],
+      "precisions": [0, 1, 2, 3],
+      "supportsNpu": false,
+      "defaults": { "scale": 2, "denoise": 1, "precision": 0 }
+    }
+  ],
+  "options": {
+    "preloadPages": [1, 2, 3, 5, 8],
+    "gpuPerformanceModes": [0, 1, 2],
+    "tileSizes": [64, 96, 128, 192, 256],
+    "maxProcessingResolution": { "width": 1600, "height": 1600 },
+    "maxResolution": { "width": 0, "height": 0 },
+    "fp16Arithmetic": true
+  }
+}
